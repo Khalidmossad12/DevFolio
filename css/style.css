@@ -1,0 +1,318 @@
+.main-heading h2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main-heading > div{
+    width: 40px;
+    height: 6px;
+}
+h2.main-h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: blue;
+    width: 100px;
+    bottom: -2px;
+}
+/* Start Header */
+/* Start Nav */
+.navbar{
+    z-index: 5;
+}
+i.bar-ico{
+    font-size: 24px;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white !important;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    color: white !important;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width:0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ;
+}
+.nav-link:hover::before{
+    width: 55%;
+}
+.nav-item a.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width:55%;
+    height: 2px;
+    background: #fff;
+}
+@media (max-width:992px) {
+    .navbar-collapse{
+        background-color: rgb(0,0,0,0.8);
+        padding: 10px;
+    }
+    .nav-item a.active{
+        color: #0078ff !important;
+    }
+    .nav-link:hover{
+        color: #0078ff !important;
+    }
+    .nav-link::before{
+        display: none !important;
+    }
+}
+/* End Nav */
+/* Start Slider */
+.slider{
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+}
+.slider h1{
+    font-size: 4.5rem;
+}
+.slider h3{
+    font-size: 2.5rem;
+}
+@media (max-width:767px) {
+    .slider h1{
+        font-size: 3rem;
+    }
+    .slider h3{
+        font-size: 1.5rem;
+    }
+}
+/* End Slider */
+/* End Header */
+/* Start About */
+.About-me{
+    padding: 4rem 0;
+}
+.About-me .shadow1
+{
+    padding: 3rem 1rem;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.3);
+}
+.progress{
+    height: 0.8rem;
+}
+
+/* End About */
+/* Start Services */
+.services .item{
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.services .item span{
+    display: inline-block;
+    border-radius: 50%;
+    border: 8px solid #0078ff;
+    margin-bottom: 1rem;
+    transition: background-color 0.5s;
+}
+.services .item:hover span{
+    background-color: #0078ff;
+    border: 8px solid #cde1f8;
+}
+.services i{
+    font-size: 34px;
+}
+.services .item:hover i{
+    color: white;
+}
+.services .item h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.services .item p{
+    color: #4e4e4e;
+}
+@media (max-width:991px) and (min-width:768px) {
+    .services .item h3{
+        font-size: 1rem;
+    }
+}
+/* End Services */
+
+/* Start Counter */
+.counter{
+    position: relative;
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem 0;
+    color: white;
+}
+.counter .overlay{
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+.counter .numbers span:first-of-type
+{
+    border-radius: 50%;
+    border: 8px solid #cde1f8;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 5px;
+}
+.counter .numbers i{
+    color: white;
+}
+/* End Counter */
+
+/* Start portfolio */
+.portfolio .por-item img{
+    transition: transform 0.7s;
+}
+.portfolio .por-item:hover img{
+    transform: scale(1.3);
+}
+.portfolio .part1 p{
+    font-size: 0.8rem;
+}
+.portfolio span i{
+    cursor: pointer;
+}
+/* End portfolio */
+
+/* Start testimonials */
+.testimonials{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 8rem 0;
+}
+.testimonials .overlay{
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+.carousel-indicators {
+    bottom:-20px;
+}
+.carousel-indicators button{
+    border-radius: 50% !important;
+    width: 12px !important ;
+    height: 12px !important;
+    background-color: #fff !important;
+
+}
+@media (min-width:768px){
+    .testimonials .slide-cap > p{
+        padding:0 5rem  ;
+    }
+}
+@media (min-width:992px){
+    .testimonials .slide-cap > p{
+        padding: 0 8rem ;
+    }
+}
+
+@media (min-width:1200px) {
+    .testimonials .slide-cap > p{
+        padding: 0 13rem ;
+    }
+}
+
+
+/* End testimonials */
+
+/* Start Blog */
+.card-body .card-btn h3{
+    font-size: 0.8rem;
+    margin:0;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+.card-body a h5{
+    transition: color 0.3s ease-in-out;
+}
+.card-body a:hover h5{
+    color:rgb(24, 114, 231) ;
+}
+.blog .ancor a{
+    transition: color 0.3s ease-in-out;
+    color: #4e4e4e !important;
+}
+.blog .ancor a:hover{
+    color:rgb(24, 114, 231) !important ;
+}
+.blog .ancor img{
+    width: 30px;
+    height: 30px;
+}
+/* End Blog */
+/* Start contact */
+.contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 8rem 0 0;
+}
+.contact .overlay{
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+.send button{
+    border-radius: 25px !important;
+    border: 4px solid #0078ff !important;
+}
+.send button:hover{
+    border: 4px solid  #cde1f8 !important;
+    box-shadow: 0 5px 8px rgb(0,0,0,0.3);
+}
+.touch-ico i{
+    color:#0078ff ;
+}
+.icons-cont{
+    width: 40px;
+    height: 40px;
+    transition:   background-color 0.3s;
+    border: 4px solid #0078ff;
+    cursor: pointer;
+}
+.icons-cont:hover{
+    background-color: #0078ff;
+    border: 4px solid #cde1f8;
+}
+.icons-cont i{
+    font-size: 18px;
+}
+.icons-cont:hover i{
+    color: white;
+}
+/* End contact */
+/* Start Footer */
+footer{
+    background-color: #0062d3;
+}
+
+/* End Footer */
